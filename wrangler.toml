@@ -1,7 +1,14 @@
 name = "discord-oidc"
-main = "worker.js"
-compatibility_date = "2022-12-24"
+main = "src/worker.ts"
+compatibility_date = "2025-03-07"
 
 kv_namespaces = [
-  { binding = "KV", id = "0b9abda82acf461c8d4ecda656217e20", preview_id = "b43c22430b5240dea89cd6cc350d3946" }
+  { binding = "KV", id = "5668179be1904388b8456ea762a2cd02", preview_id = "8e8413b1ab874eb9bacbbb9ee4911daa" }
 ]
+
+[vars]
+# Define your secrets using `wrangler secret put <NAME>`
+# CLIENT_ID = ""
+# CLIENT_SECRET = ""
+# REDIRECT_URL = ""
+# SERVERS_TO_CHECK_ROLES = "" # Optional, comma-separated list of server IDs
